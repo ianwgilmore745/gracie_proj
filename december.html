@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentines Day</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Happy Valentines Day</h1>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/06ng7WcrFcyrfhKrBVTKf9?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </header>
+
+    <!-- nav -->
+     <!-- style it -->
+     <nav>
+        <ul>
+            <li> <a href="gracie.html">Home</a></li>
+            <li> <a href="march.html">March</a> </li>
+            <li> <a href="june.html">June</a></li>
+            <li> <a href="july.html">July</a> </li>
+            <li> <a href="august.html">August</a></li>
+            <li> <a href="september.html">September</a> </li>
+            <li> <a href="november.html">November</a></li>
+            <li> <a href="december.html">December</a></li>
+            <li> <a href="january.html">January</a></li>
+
+        </ul>
+     </nav>
+
+
+
+    <!-- main -->
+    <main class="main_style">
+        <div id="letter_all">
+        <!-- Slideshow container -->
+
+    <h2>December 24</h2>
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 11</div>
+        <img src="images/December/IMG_4193.jpeg">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 11</div>
+      <img src="images/December/IMG_2775.jpeg" >
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 11</div>
+        <img src="images/December/IMG_2788.jpeg" >
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 11</div>
+        <img src="images/December/IMG_2990.jpeg" >
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 11</div>
+        <img src="images/December/IMG_3002.jpeg">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 11</div>
+        <img src="images/December/IMG_3015.jpeg" >
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 11</div>
+        <img src="images/December/IMG_3238.jpeg" >
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 11</div>
+        <img src="images/December/IMG_3246.jpeg" >
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 11</div>
+        <img src="images/December/IMG_3984.jpeg">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 11</div>
+        <img src="images/December/IMG_4008.jpeg">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 11</div>
+        <img src="images/December/IMG_1493.jpeg">
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+  </div>
+
+        </p>
+        </div>
+
+
+        <div class="note">
+            <p>
+                Hi Beautiful, <br>
+                <br>
+                This December was the best christmas of my life. Our first Christmas together was so special. We got to hang out in front of the tree and be together and take photos together. Having a lightsaber fight with you at night on New Years Eve is one of my favorite memories. I had so much fun taking photos with you at the zoo, that's how much I love you. Our second disney trip was also so fun, I loved doing all the star wars stuff with you and doing some actual roller coasters, I still hold the space mountain lies against you though. Most of all, I loved watching you around my family and the people that are important to me. I love watching people see everything that I love about you and I can't wait for you to get even closer with them. 
+            </p>
+
+
+
+        </div>
+    </main>
+
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+    </script>
+
+        
+
+    <!-- footer -->
+</body>
+</html>
